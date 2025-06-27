@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElectroBits - Tu Tienda de Piezas Electrónicas</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 <body>
     <header>
         <div class="container">
@@ -20,7 +21,8 @@
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
-            <div class="cart-icon" id="cart-icon-btn"> <i class="fas fa-shopping-cart"></i>
+            <div class="cart-icon" id="cart-icon-btn">
+                <i class="fas fa-shopping-cart"></i>
                 <span id="cart-count">0</span>
             </div>
         </div>
@@ -57,7 +59,8 @@
                     <img src="imagen/activos.jpg" alt="Transistores">
                     <h3>Componentes Activos</h3>
                     <p>Transistores, diodos, ICs.</p>
-
+                </div>
+            </div>
         </section>
 
         <section id="products" class="products-section container">
@@ -104,9 +107,12 @@
                 <span>Total:</span>
                 <span id="cart-total-price">$0.00</span>
             </div>
-            <button class="btn checkout-btn">Proceder al Pago</button>
+            <button class="btn checkout-btn" id="generate-pdf-btn">Generar Cotización PDF</button>
         </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
